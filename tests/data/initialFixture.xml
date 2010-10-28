@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <account id="1" 
+        name="test"
+        pin="1234"/>
+        
+    <account_transactions id="1"
+        account="1"
+        amount="800.00"
+        name="Deposit"
+        type="1"/>
+
+    <account_transactions id="2"
+        account="1"
+        amount="50.00"
+        name="Deposit"
+        type="2"/>
+</dataset>

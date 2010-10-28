@@ -1,0 +1,26 @@
+<phpunit bootstrap="./bootstrap.php" colors="false">         
+    <testsuite name="LI PHP Talk">
+        <directory>./</directory>
+    </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">../app/</directory>
+
+            <exclude>
+                <directory suffix=".html">../app/</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" 
+            target="./data/logs/report" 
+            charset="UTF-8"
+            yui="true" 
+            highlight="true" 
+            lowUpperBound="50" 
+            highLowerBound="80"/>
+            
+        <log type="testdox-html" 
+            target="./data/logs/testdox.html" />
+    </logging>         
+</phpunit>
